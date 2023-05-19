@@ -1,0 +1,82 @@
+//Global scss-files imports
+@import "./varables.scss";
+@import "./font.scss";
+@import "./header.scss";
+
+body {
+  font-family: "Author", sans-serif;
+}
+.section {
+  &__title {
+    font-style: normal;
+    font-weight: 494;
+    font-size: 30px;
+    line-height: 56px;
+    color: $blue;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  &__text {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 375;
+    font-size: 15px;
+    line-height: 15px;
+    color: $grey;
+    max-width: 600px;
+  }
+}
+.btn {
+  background: $red;
+  padding: 18px 48px;
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  font-style: normal;
+  font-weight: 494;
+  font-size: 22px;
+  line-height: 24px;
+  color: $white;
+  // border-radius: 2px;
+  max-width: fit-content;
+
+  .svg {
+    transition: 0.3s all ease;
+  }
+  &:hover {
+    background: rgb(247, 7, 7);
+    transition: 0.3s all ease;
+    color: $white;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.btn__outline {
+  padding: 18px 48px;
+  border: 1px solid #e5e4e1; //ligthgrey
+  font-style: normal;
+  font-style: normal;
+  font-weight: 494;
+  font-size: 22px;
+  line-height: 24px;
+
+  color: $blue;
+  background: $white;
+
+  &:hover {
+    background: $blue;
+    transition: 0.3s all ease;
+    color: $white;
+
+    .svg {
+      transform: translatex(10px);
+    }
+  }
+}
+
+main {
+  padding: 50px 200px;
+}

@@ -1,0 +1,75 @@
+@import "./varables.scss";
+.file {
+  &__uploder {
+    display: flex;
+    min-width: 1120px;
+    width: 100%;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  &__uploder-item {
+    &:first-child {
+      flex: 0 1 360px;
+    }
+    &:last-child {
+      flex: 1 1 auto;
+    }
+  }
+  &__lable {
+    cursor: pointer;
+    display: flex;
+    height: 360px;
+    width: 360px;
+    position: relative;
+    background: $lightblue;
+    border: 2px dashed $blue;
+  }
+  &__input {
+    display: none;
+  }
+  &__item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-image {
+  }
+  &__item-text {
+    font-style: normal;
+    font-weight: 494;
+    font-size: 20px;
+    line-height: 22px;
+    color: $blue;
+    margin-top: 30px;
+  }
+}
+// .form {
+//   &__item {
+//   }
+//   &__item-title {
+//   }
+//   &__input {
+//   }
+// }
+
+.profile {
+  &__inputs {
+    margin-top: 17px;
+  }
+  &__input {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+
+    .input {
+      width: 100%;
+      display: flex;
+    }
+  }
+}

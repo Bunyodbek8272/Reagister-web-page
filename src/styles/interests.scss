@@ -1,0 +1,44 @@
+@import "./varables.scss";
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.interest {
+  &__item {
+    display: flex;
+    padding: 15px 24px;
+    background: $white;
+    border: 1px solid $lightgray;
+    box-sizing: border-box;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+  &__checkbox {
+    display: none;
+    &:checked ~ .interest__text {
+      color: $blue;
+    }
+    &:checked ~ .interest__border {
+      opacity: 1;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 494;
+    font-size: 18px;
+    line-height: 20px;
+    color: $grey;
+  }
+  &__border {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid $blue;
+    opacity: 0;
+  }
+}

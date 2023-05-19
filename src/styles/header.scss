@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  &__item {
+    flex: 0 1 50%;
+    &.image__item {
+      background: url(../image/bg__main.jpg) center/ cover no-repeat;
+    }
+    &.info__item {
+      padding: 65px 100px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.logo {
+  padding-bottom: 89px;
+  display: flex;
+}
+.header__btn {
+  margin-top: 40px;
+  padding: 18px 30px;
+}
+.link {
+  margin-top: auto;
+  font-style: normal;
+  font-weight: 375;
+  font-size: 18px;
+  line-height: 20px;
+  color: #747887; // why did not var work
+  a {
+    color: #eb3d35; // why did not var work
+    margin-left: 5px;
+  }
+}
